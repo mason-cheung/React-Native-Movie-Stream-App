@@ -12,6 +12,7 @@ import Recent from './screens/Recent'
 
 const Tab = createMaterialBottomTabNavigator();
 
+
 // create a component
 const App = () => {
   return (
@@ -31,8 +32,24 @@ const App = () => {
             <MaterialCommunityIcons name='home' color={color} size={28} />
           )
         }} />
-        <Tab.Screen name="Recent" component={Recent} />
-        <Tab.Screen name="Profile" component={Profile} />
+        <Tab.Screen 
+        name="Recent" 
+        component={Recent} 
+        options={{
+          tabBarLabel: '', tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name='camera-metering-spot' color={color} size={28} />
+          )
+        }}
+        />
+        <Tab.Screen 
+        name="Profile" 
+        component={Profile}
+        options={{
+          tabBarLabel: '', tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name='account' color={color} size={28} />
+          )
+        }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   )
