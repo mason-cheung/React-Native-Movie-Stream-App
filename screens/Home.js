@@ -146,7 +146,7 @@ const Home = () => {
                 </View>
             </View>
             <View style={{ marginHorizontal: 14 }}>
-                <Text style={{ color: 'white', fontSize: 24, fontWeight: 'bold', marginBottom: 24, }}>Continue Watching</Text>
+                <Text style={{ color: 'white', fontSize: 24, fontWeight: 'bold', marginBottom: 24, marginTop: 24}}>Continue Watching</Text>
                 <ImageBackground
                     source={{ uri: 'https://storage.googleapis.com/www-cw-com-tw/article/202002/article-5e5737dd478ab.jpg' }}
                     style={{ height: 250, width: '100%', backgroundColor: '#000' }}
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     carouselContentContainer: {
         flex: 1,
         backgroundColor: '#000',
-        height: Dimensions.get('window').height,
+        height: Dimensions.get('screen').height,
         paddingHorizontal: 14,
     },
     ImageBackGd: {
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         elevation: 10,
         borderRadius: 4,
-        marginVertical: 10,
+        marginVertical: 50,
         width: '95%',
         flexDirection: 'row',
         alignSelf: 'center',

@@ -11,7 +11,7 @@ import Profile from './screens/Profile'
 import Recent from './screens/Recent'
 
 const Tab = createMaterialBottomTabNavigator();
-
+console.disableYellowBox = true;
 
 // create a component
 const App = () => {
